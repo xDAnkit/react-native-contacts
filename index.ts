@@ -2,6 +2,7 @@ import { NativeModules } from "react-native";
 import NativeContacts from "./src/NativeContacts";
 import { Contact, Group, PermissionType } from "./type";
 
+// Modified this to fix RN new Arch issue
 const Contacts = NativeModules.Contacts ?? NativeContacts;
 
 async function getAll(): Promise<Contact[]> {
